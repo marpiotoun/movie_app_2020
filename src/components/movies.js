@@ -4,11 +4,11 @@ import "./Movie.css";
 
 function Movie({ key, year, title, summary, poster, genres }) {
     return (
-        <div className="movies__movie">
+        <div className="movie">
             <img className="movie__poster" src={poster} alt={title} title={title}></img>
             <h3 className="movie__title">{title}</h3>
             <h5 className="movie__year">{year}</h5>
-            <span className="genres">{genres.join(", ")}</span>
+            <span className="movie__genres">{genres.join(", ")}</span>
             <p className="movie__summary">{summary}</p>
         </div>
 
